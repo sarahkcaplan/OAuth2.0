@@ -18,6 +18,9 @@ DBSession = sessionmaker(bind=engine)
 # session.rollback()
 session = DBSession()
 
+session.query(User).delete()
+session.query(Restaurant).delete()
+session.query(MenuItem).delete()
 
 # Create dummy user
 User1 = User(name="Robo Barista", email="tinnyTim@udacity.com",
