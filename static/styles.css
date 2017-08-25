@@ -161,3 +161,8 @@ u }
 	text-align: center;
 
 }
+
+.warning {
+	font-color: red;
+	font-style: italic;
+}

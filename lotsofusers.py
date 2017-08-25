@@ -18,6 +18,7 @@ DBSession = sessionmaker(bind=engine)
 # session.rollback()
 session = DBSession()
 
+# Remove existing (i.e. test) data if it exists
 session.query(User).delete()
 session.query(Restaurant).delete()
 session.query(MenuItem).delete()

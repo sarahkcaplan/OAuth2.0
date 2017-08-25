@@ -11,7 +11,7 @@
 	</div>
 	<div class="row">
 		<div class="col-md-6 col-md-offset-1 padding-top">
-			<form action="#" method = "post">
+			<form action="{{url_for('newMenuItem', restaurant_id = restaurant_id )}}" method = "post">
 				<div class="form-group">
 					<label for="name">Name:</label>
 					<input type ="text" maxlength="50" class="form-control" name="name"placeholder="Name of the course">
@@ -26,28 +26,21 @@
 					</div>
 					<label for="course">Course:</label>
 					<div class="radio">
-					  <label>
-					    <input type="radio" name="course" id="course1" value="Appetizer">Appetizer
-					  </label>
+					    <input type="radio" name="courses" id="appetizer" value="appetizer">Appetizer
 					</div>
 					<div class="radio">
-					  <label>
-					    <input type="radio" name="course" id="course2" value="Entree">Entree
-					  </label>
+					    <input type="radio" name="courses" id="entree" value="entree">Entree
 					</div>
 					<div class="radio">
-					  <label>
-					    <input type="radio" name="course" id="course3" value="Dessert">Dessert
-					  </label>
+					    <input type="radio" name="courses" id="dessert" value="dessert">Dessert
 					</div>
 					<div class="radio">
-					  <label>
-					    <input type="radio" name="course" id="course4" value="Beverage">Beverage
-					  </label>
+					    <input type="radio" name="courses" id="beverage" value="beverage">Beverage
 					</div>
 					<button type="submit" class="btn btn-default" id="submit" type="submit">
 					<span class="glyphicon glyphicon-glass" aria-hidden="true"></span>Create</button>
 				</div>
+				<br>
 			</form>
 		</div>
 	</div>
